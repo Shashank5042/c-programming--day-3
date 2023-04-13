@@ -1,0 +1,18 @@
+#include<stdio.h>
+int main()
+{
+    int a, b,tem;
+    int *p1,*p2;
+    printf("\n Enter the value of =");
+    scanf("%d",&a);
+    printf("\n Enter the second value =");
+    scanf("%d",&b);
+    p1=&a;
+    p2=&b;
+    printf("\n Two number before swaping=%d,%d",*p1,*p2);
+    tem=*p1;
+    *p1=*p2;
+    *p2=tem;
+    printf("\n The Two numbers after swaping=%d,%d",*p1,*p2);
+    return 0;
+}
