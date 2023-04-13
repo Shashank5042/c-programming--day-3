@@ -1,0 +1,14 @@
+#include<stdio.h>
+int main()
+{
+    int a,*p;
+    printf("Enter any integer =");
+    scanf("%d",&a);
+    p = &a;
+    printf("\n Value of an integer =%d",a);
+    printf("\n value of an integer =%d",*p);
+    printf("\n Value of an integer =%d",*(&a));
+    printf("\n Address of an integer =%d",p);
+    printf("\n Address of an integer=%d",&a);
+    return 0;
+}
